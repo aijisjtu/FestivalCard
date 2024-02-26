@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<image src="https://mmbiz.qpic.cn/mmbiz_png/R0b2UA2kvZj98FwnQpDsP4OTiaVHoOWNVshssAHJznicibcj1icfhC77vfHriaC0iaHk2XIZ3ZIYOCGibngE4GCsFhDVw/640?wx_fmt=png&amp;from=appmsg" mode="widthFix" class="bg-img"/>
+  <view class="card-box">
+    <view class="text-box">
+    <input wx:if="{{isMe}}" class="text-ipt to-name font"value="{{toName}}" bindinput="toNameInput" />
+    <input wx:if="{{!isMe}}" class="text-ipt to-name font"value="{{toName}}" bindinput="toNameInput" disabled="true"/>
+
+    <input wx:if="{{isMe}}" class="main-text font" value="{{mainText}}" bindinput="mainTextInput"/>
+    <input wx:if="{{!isMe}}" class="main-text font" value="{{mainText}}" bindinput="toNameInput" disabled="true"/>
+    
+    <input wx:if="{{isMe}}" class="from-name font" value="{{fromName}}" bindinput="fromNameInput"/>
+    <input wx:if="{{!isMe}}" class="from-name font" value="{{fromName}}" bindinput="toNameInput" disabled="true"/>
+    </view>
+  </view>
+  
+  <view>
+    <image mode='aspectFit'  src="../../images/music.png"  class="music {{!checked && 'circle'}}" catchtap="checkMusic"> 
+    </image>
+  </view>
+
+
+<view>
+    <button wx:if="{{isMe}}" class="send-btn" open-type="share">发送给好友</button>
+  </view>
+

@@ -1,0 +1,75 @@
+/**index.wxss**/
+.card-box{
+    background-color:rgb(253,247,249);
+    width:758rpx;
+    min-height:100vh;
+}
+
+
+.bg-img{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    z-index:0;
+}
+
+.card-box .text-box{
+    position: relative;
+    z-index: 1;
+    margin: 300rpx 130rpx 50rpx;
+}
+
+.main-text {
+    margin: 60rpx 0;
+    color: #fff;
+}
+.from-name {
+    text-align: right;
+    color: #fff;
+}
+
+.to-name{
+    text-align: left;
+    margin: 60rpx 0;
+    color:#fff;
+}
+.send-btn{
+    position: fixed;
+    bottom: 200rpx;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 70, 70);
+    color: #fff;
+    z-index: 2;
+}
+
+.font{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.music {
+  height: 120rpx; 
+  width: 120rpx;
+  position: absolute;
+  bottom: 420rpx;
+  left: 320rpx;
+  z-index: 2;
+}
+
+.circle {
+  animation: circle 2s linear infinite;
+  z-index: 2;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}

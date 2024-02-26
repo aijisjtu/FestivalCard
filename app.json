@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "requiredBackgroundModes": ["audio", "location"],
+  "window": {
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "renderer": "skyline",
+  "rendererOptions": {
+    "skyline": {
+      "defaultDisplayBlock": true,
+      "disableABTest": true,
+      "sdkVersionBegin": "3.0.0",
+      "sdkVersionEnd": "15.255.255",
+      "defaultContentBox": true      
+    }
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents",
+  "disableScroll": true,
+  "navigationStyle": "custom"
+}
